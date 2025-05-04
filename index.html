@@ -10,7 +10,7 @@
 
 <body>
     <div class="header">
-        <h1>Rock Paper Scissors</h1>
+        <h1>RockPaperScissors</h1>
         <button>Restart game</button>
     </div>
     <div class="body">
@@ -19,14 +19,25 @@
             <div class="computer-score">Computer Score <span id="computer-score-value">0</span></div>
         </div>
         <div class="result">
-            <div class="user-choice"></div>
-            <div class="computer-choice"></div>
+            <div id="user-choice">
+                <div class="image-container"></div>
+                <p>User choice</p>
+            </div>
+            <div id="computer-choice">
+                <div class="image-container"></div>
+                <p>Computer choice</p>
+            </div>
         </div>
+        <h2 class="select-option">Select Your Choice</h2>
         <div class="options">
-            <button class="input-button"><img src="./images/rock.png" alt="Rock"></button>
-            <button class="input-button"><img src="./images/paper.png" alt="Paper"></button>
-            <button class="input-button"><img src="./images/scissors.png" alt="Scissors"></button>
+            <button class="input-button"><img class="image-container" src="./images/rock.png" alt="Rock"></button>
+            <button class="input-button"><img class="image-container" src="./images/paper.png" alt="Paper"></button>
+            <button class="input-button"><img class="image-container" src="./images/scissors.png"
+                    alt="Scissors"></button>
         </div>
+    </div>
+    <div class="footer">
+        Copy &copy; 2023 Rock Paper Scissors Game @Dinesh
     </div>
     <script src="./index.js"></script>
 </body>
